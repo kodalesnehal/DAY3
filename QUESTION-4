@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>DEPOSIT AMOUNT<br><br><br>
+
+  <script>
+
+               class Account{
+                   constructor(m,n)
+                   {
+                       this.Name = m;
+                       this.Balance=n;
+                   }
+    
+              deposit(amt)
+              {
+                  this.Balance+=amt;
+              }
+            }
+
+            class account extends Account{
+
+                constructor(name1,bal1)
+                {
+                    super(name1,bal1);
+                }
+
+                withdraw(amt1)
+                {
+                    this.Balance -= amt1;
+                }
+
+                show()
+                {
+                    var str = "Name :"+this.Name+"<br/> Balance :"+this.Balance+"<br/><br/>";
+                  document.write(str); 
+                }
+
+            }
+
+          user1 = new account("Snehal Kodale",60000);
+          user2 = new account("Shrushti Kodale",95000);
+          user1.deposit(60000);
+          user2.deposit(95000);
+          user1.withdraw(1000);
+          user2.withdraw(1);
+          user1.show();
+          user2.show();
+
+        </script>
+		</body>
+		</html>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
