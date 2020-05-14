@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+          class Account
+          {
+              constructor(x,y)
+              {
+                  this.name = x;
+                  this.balance = y;
+              }
+
+              deposite(amount)
+              {
+                  this.balance+=amount;
+              }
+
+              display()
+              {
+                  var str = "NAME :-"+this.name+"<br/>BALANCE :-"+this.balance+"<br/><br/>";
+                  document.write(str);  
+              }
+          }
+
+          s1 = new Account("snehal kodale",25000);
+          s2 = new Account("srushti kodale",20000);
+          s1.deposite(25000);
+          s2.deposite(20000);
+          s1.display();
+          s2.display();
+
+        </script>
+  </head>
+  </html>
